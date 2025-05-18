@@ -38,7 +38,7 @@
 
   <script>
     const feedContainer = document.getElementById('rss-feed');
-    fetch("https://api.rss2json.com/v1/api.json?rss_url=https://toxsec.substack.com/feed")
+    fetch("https://api.rss2json.com/v1/api.json?rss_url=https://toxsec.substack.com/feed&nocache=" + Date.now())
       .then(res => res.json())
       .then(data => {
         feedContainer.innerHTML = "";
