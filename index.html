@@ -1,63 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ToxSec — CTF & OSCP Blog</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-
-  <header>
-    <h1>ToxSec</h1>
-    <p class="tagline">Bug Bounties & Capture the Flag Writeups</p>
-  </header>
-
-  <nav class="cheatsheet-bar">
-    <a href="#">Linux PrivEsc</a>
-    <a href="#">Reverse Shells</a>
-    <a href="#">Web Enum</a>
-    <a href="#">Nmap Snippets</a>
-    <a href="#">Stego Tools</a>
-    <a href="#">Windows Commands</a>
-  </nav>
-
-  <main>
-    <section class="writeups">
-      <h2>📚 Latest from Substack</h2>
-      <div id="rss-feed" class="thumbnail-gallery">
-        <p style="color: #999;">Loading latest posts...</p>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <p>© 2025 ToxSec — Built for Offensive Security Practice</p>
-    <p><a href="mailto:chris@toxsec.com">Contact</a> • <a href="https://github.com/" target="_blank">GitHub</a> • <a href="https://toxsec.substack.com" target="_blank">Substack</a></p>
-  </footer>
-
-  <script>
-    const feedContainer = document.getElementById('rss-feed');
-    fetch("https://api.rss2json.com/v1/api.json?rss_url=https://toxsec.substack.com/feed&nocache=" + Date.now())
-      .then(res => res.json())
-      .then(data => {
-        feedContainer.innerHTML = "";
-        data.items.slice(0, 50).forEach(post => {
-          const div = document.createElement("div");
-          div.className = "thumb";
-          div.innerHTML = `
-            <a href="${post.link}" target="_blank">
-              <img src="${post.thumbnail || 'https://via.placeholder.com/100'}" alt="Thumbnail">
-              <h3>${post.title}</h3>
-            </a>
-          `;
-          feedContainer.appendChild(div);
-        });
-      })
-      .catch(err => {
-        feedContainer.innerHTML = "<p style='color: #888;'>Unable to load posts.</p>";
-      });
-  </script>
-
-</body>
+<html>
+  <head>
+    <meta http-equiv="refresh" content="0; url=https://toxsec.substack.com" />
+    <title>Redirecting...</title>
+  </head>
+  <body>
+    <p>If you are not redirected, <a href="https://toxsec.substack.com">click here</a>.</p>
+  </body>
 </html>
