@@ -1,0 +1,75 @@
+/* style.css - Dark Mode with Magenta Accent */
+body {
+  background-color: #121212;
+  color: #e0e0e0;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+header {
+  text-align: center;
+  padding: 2rem;
+  background-color: #1e1e1e;
+  border-bottom: 2px solid #ff00ff;
+}
+h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  color: #ff00ff;
+}
+.tagline {
+  font-size: 1.2rem;
+  color: #bbb;
+}
+main {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+}
+section h2 {
+  color: #ff00ff;
+  border-bottom: 1px solid #444;
+  padding-bottom: 0.5rem;
+}
+.tools ul {
+  list-style: none;
+  padding: 0;
+}
+.tools li {
+  margin: 0.5rem 0;
+}
+.tools a {
+  color: #ff66ff;
+  text-decoration: none;
+}
+.tools a:hover {
+  text-decoration: underline;
+}
+.writeups .post-list article {
+  margin-bottom: 1.5rem;
+}
+.writeups a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+.writeups a:hover {
+  color: #ff66ff;
+}
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  background-color: #1e1e1e;
+  color: #888;
+  border-top: 1px solid #333;
+}
+footer a {
+  color: #ff66ff;
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+footer a:hover {
+  text-decoration: underline;
+}
