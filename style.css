@@ -75,7 +75,10 @@ section h2 {
   overflow: hidden;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
   transition: transform 0.2s ease;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
 }
 
 .thumb:hover {
@@ -83,17 +86,19 @@ section h2 {
 }
 
 .thumb img {
-  width: 100%;
-  display: block;
-  border-bottom: 1px solid #333;
+  width: 100px;
+  height: auto;
+  flex-shrink: 0;
+  border-radius: 6px;
+  border: 1px solid #333;
 }
 
 .thumb h3 {
   margin: 0;
-  padding: 1rem;
+  padding: 0;
   color: #ffffff;
   font-size: 1.1rem;
-  background-color: #1e1e1e;
+  text-align: left;
 }
 
 footer {
