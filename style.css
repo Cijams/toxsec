@@ -1,4 +1,4 @@
-/* style.css - Dark Mode with Magenta Accent */
+/* style.css - Dark Mode with White Accent */
 body {
   background-color: #121212;
   color: #e0e0e0;
@@ -11,13 +11,13 @@ header {
   text-align: center;
   padding: 2rem;
   background-color: #1e1e1e;
-  border-bottom: 2px solid #ff00ff;
+  border-bottom: 2px solid #ffffff;
 }
 
 h1 {
   margin: 0;
   font-size: 2.5rem;
-  color: #ff00ff;
+  color: #ffffff;
 }
 
 .tagline {
@@ -37,7 +37,7 @@ h1 {
 }
 
 .cheatsheet-bar a {
-  color: #ff66ff;
+  color: #ffffff;
   text-decoration: none;
   font-weight: bold;
   padding: 0.5rem 1rem;
@@ -56,7 +56,7 @@ main {
 }
 
 section h2 {
-  color: #ff00ff;
+  color: #ffffff;
   border-bottom: 1px solid #444;
   padding-bottom: 0.5rem;
   margin-bottom: 1.5rem;
@@ -66,14 +66,16 @@ section h2 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
+  margin-top: 2rem;
 }
 
 .thumb {
   background-color: #1e1e1e;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 0 10px rgba(255, 0, 255, 0.15);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
   transition: transform 0.2s ease;
+  text-align: center;
 }
 
 .thumb:hover {
@@ -89,7 +91,7 @@ section h2 {
 .thumb h3 {
   margin: 0;
   padding: 1rem;
-  color: #ff66ff;
+  color: #ffffff;
   font-size: 1.1rem;
   background-color: #1e1e1e;
 }
@@ -104,11 +106,17 @@ footer {
 }
 
 footer a {
-  color: #ff66ff;
+  color: #ffffff;
   text-decoration: none;
   margin: 0 0.5rem;
 }
 
 footer a:hover {
   text-decoration: underline;
+}
+
+/* Ensure external link buttons are styled clearly */
+footer a[href*="substack.com"]::after {
+  content: " ↗";
+  color: #ffffff;
 }
