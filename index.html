@@ -9,31 +9,34 @@
 <body>
   <header>
     <h1>ToxSec</h1>
-    <p class="tagline">OSCP | CTF | Red Team Writeups</p>
+    <p class="tagline">Bug Bounties and Capture the Flag</p>
   </header>
 
-  <main>
-    <section class="tools">
-      <h2>🛠️ Tools & Cheatsheets</h2>
-      <ul>
-        <li><a href="#">Linux PrivEsc Commands</a></li>
-        <li><a href="#">Reverse Shells (Bash, PHP, Python)</a></li>
-        <li><a href="#">Web Enumeration Tips</a></li>
-        <li><a href="#">Port Scan Snippets</a></li>
-      </ul>
-    </section>
+  <nav class="cheatsheet-bar">
+    <a href="#">Linux PrivEsc</a>
+    <a href="#">Reverse Shells</a>
+    <a href="#">Web Enum</a>
+    <a href="#">Nmap Snippets</a>
+    <a href="#">Stego Tools</a>
+    <a href="#">Windows Commands</a>
+  </nav>
 
+  <main>
     <section class="writeups">
-      <h2>📚 Blog Writeups</h2>
-      <div class="post-list">
-        <article>
-          <h3><a href="https://toxsec.substack.com/p/solstice-oscp-lfi-log-poisoning" target="_blank">Solstice: OSCP LFI → RCE → Root</a></h3>
-          <p>Using log poisoning to escalate from LFI to root access in a PHP app.</p>
-        </article>
-        <article>
-          <h3><a href="#" target="_blank">Coming Soon: SSH Spray & Enumeration</a></h3>
-          <p>How to perform safe and fast username/password spraying during assessments.</p>
-        </article>
+      <h2>🧠 Latest CTF Writeups</h2>
+      <div class="thumbnail-gallery">
+        <div class="thumb">
+          <a href="https://toxsec.substack.com/p/solstice-oscp-lfi-log-poisoning" target="_blank">
+            <img src="https://via.placeholder.com/400x200.png?text=Solstice+CTF" alt="Solstice CTF">
+            <h3>Solstice: OSCP LFI → RCE → Root</h3>
+          </a>
+        </div>
+        <div class="thumb">
+          <a href="#" target="_blank">
+            <img src="https://via.placeholder.com/400x200.png?text=Coming+Soon" alt="Coming Soon">
+            <h3>Coming Soon: SSH Spray & Enumeration</h3>
+          </a>
+        </div>
       </div>
     </section>
   </main>
